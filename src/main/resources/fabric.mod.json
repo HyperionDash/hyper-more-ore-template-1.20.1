@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "moreore",
+	"version": "${version}",
+	"name": "[Hyper] More Ores",
+	"description": "My own take on adding more ores to minecraft!",
+	"authors": [
+		"HyperionDash - literally everything else",
+		"Kaupenjoe - his amazing mod dev series"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/moreore/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hyper.moreore.HyperMoreOre"
+		],
+		"client": [
+			"net.hyper.moreore.HyperMoreOreClient"
+		],
+		"fabric-datagen": [
+			"net.hyper.moreore.HyperMoreOreDataGenerator"
+		]
+	},
+	"mixins": [
+		"moreore.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
